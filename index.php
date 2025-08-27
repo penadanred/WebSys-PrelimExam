@@ -15,7 +15,7 @@
     <div class="calculator">
         <form method="POST">
             <input type="number" name="Quiz" placeholder="Quiz Score" required>
-            <input type="number" name="Assigment" placeholder="Assignment Score" required>
+            <input type="number" name="Assignment" placeholder="Assignment Score" required>
             <input type="number" name="Exam" placeholder="Exam Score" required>
             <button type="submit">Calculate</button>
             
@@ -27,15 +27,15 @@
                 $Assignment = $_POST['Assignment'];
                 $Exam = $_POST['Exam'];
 
-                $average = ($Quiz * 0.30) + ( $Assignment * 0.30) + ($Exam * 0.40 );
+                $result = ($Quiz * 0.30) + ( $Assignment * 0.30) + ($Exam * 0.40 );
                 
-                 if ($Average >= 90) {
+                 if ($result >= 90) {
                     $letterGrade = "A";
-                } elseif ($Average >= 80) {
+                } elseif ($result >= 80) {
                     $letterGrade = "B";
-                } elseif ($Average >= 70) {
+                } elseif ($result >= 70) {
                     $letterGrade = "C";
-                } elseif ($Average >= 60) {
+                } elseif ($result >= 60) {
                     $letterGrade = "D";
                 } else {
                     $letterGrade = "F";
