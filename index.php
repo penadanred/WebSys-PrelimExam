@@ -3,10 +3,43 @@
 <head>
     <title>Simple Calculator</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; }
-        .calculator { border: 2px solid #ccc; padding: 20px; width: 300px; }
-        input, select, button { margin: 5px; padding: 5px; }
-        .result { font-weight: bold; color: #333; }
+                body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f9f9f9;
+        }
+
+        .calculator {
+            border: 2px solid #ccc;
+            padding: 20px;
+            width: 300px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input, select, button {
+            margin: 5px 0;
+            padding: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .result {
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
