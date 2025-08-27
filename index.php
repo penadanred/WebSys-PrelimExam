@@ -3,12 +3,44 @@
 <head>
     <title>Simple Calculator</title>
     <style>
-    body { font-family: sans-serif; text-align: center; background: #eee; }
-    .calculator { background: #fff; padding: 15px; width: 250px; margin: 50px auto; border: 1px solid #ccc; }
-    input, button { width: 100%; margin: 5px 0; padding: 8px; }
-    .result { margin-top: 10px; font-weight: bold; }
-</style>
+                body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #a8a8a8ff;
+        }
 
+        .calculator {
+            border: 2px solid #130606ff;
+            padding: 20px;
+            width: 300px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input, select, button {
+            margin: 5px 0;
+            padding: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .result {
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
     <h1>Grade Calculator</h1>
@@ -42,7 +74,7 @@ if ($_POST) {
     } else {
         $letterGrade = "F";
     }
-    // ito dito na lalabas ang average mo at kung anong letter grade ka
+    // ito dito na lalabas ang average mo at kung anong letter grade
     echo "<div class='result'>Final Grade: " . number_format($result, 1) . "<br>Letter Grade: $letterGrade</div>";
 }
 ?>
