@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Calculator</title>
+    <title>Grade Calculator</title>
     <style>
                 body {
             font-family: Arial, sans-serif;
