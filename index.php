@@ -22,29 +22,29 @@
         </form>
         
         <?php
-            if ($_POST) {
-                $Quiz  = $_POST['Quiz'];
-                $Assignment = $_POST['Assignment'];
-                $Exam = $_POST['Exam'];
+if ($_POST) {
+    $Quiz  = $_POST['Quiz'];
+    $Assignment = $_POST['Assignment'];
+    $Exam = $_POST['Exam'];
 
-                $result = ($Quiz * 0.30) + ( $Assignment * 0.30) + ($Exam * 0.40 );
-                
-                 if ($result >= 90) {
-                    $letterGrade = "A";
-                } elseif ($result >= 80) {
-                    $letterGrade = "B";
-                } elseif ($result >= 70) {
-                    $letterGrade = "C";
-                } elseif ($result >= 60) {
-                    $letterGrade = "D";
-                } else {
-                    $letterGrade = "F";
-                   
-                }
-                
-                echo "<div class='result'>Final Grade: " . number_format($Average, 1) . "<br>Letter Grade: $letterGrade</div>";
-            }
-        ?>
+    $result = ($Quiz * 0.30) + ($Assignment * 0.30) + ($Exam * 0.40);
+
+    if ($result >= 90) {
+        $letterGrade = "A";
+    } elseif ($result >= 80) {
+        $letterGrade = "B";
+    } elseif ($result >= 70) {
+        $letterGrade = "C";
+    } elseif ($result >= 60) {
+        $letterGrade = "D";
+    } else {
+        $letterGrade = "F";
+    }
+
+    echo "<div class='result'>Final Grade: " . number_format($result, 1) . "<br>Letter Grade: $letterGrade</div>";
+}
+?>
+
     </div>
 </body>
 </html>
