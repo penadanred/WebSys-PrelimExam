@@ -27,7 +27,7 @@
                 $Assignment = $_POST['Assignment'];
                 $Exam = $_POST['Exam'];
 
-                $result = ($Quiz * 0.3) + ( $Assignment * 0.3) + ($Exam * 0.4 );
+                $average = ($Quiz * 0.30) + ( $Assignment * 0.30) + ($Exam * 0.40 );
                 
                  if ($Average >= 90) {
                     $letterGrade = "A";
