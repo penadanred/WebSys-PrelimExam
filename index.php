@@ -44,7 +44,7 @@
 </head>
 <body>
     <h1>Grade Calculator</h1>
-     dito ko ininput or mag iinput ng number or score sa quiz,assignment,exam
+     <!--dito ko ininput or mag iinput ng number or score sa quiz,assignment,exam
     <div class="calculator">
         <form method="POST">
             <input type="number" name="Quiz" placeholder="Quiz Score" required>
@@ -56,13 +56,13 @@
         
         <?php
 if ($_POST) {
-    ito dito mapupunta yung ininput ko sa quiz,assignment,exam
+    //ito dito mapupunta yung ininput ko sa quiz,assignment,exam
     $Quiz  = $_POST['Quiz'];
     $Assignment = $_POST['Assignment'];
     $Exam = $_POST['Exam'];
 
     $result = ($Quiz * 0.30) + ($Assignment * 0.30) + ($Exam * 0.40);
-     dito mo malalaman kung anong average or grades
+     //dito mo malalaman kung anong average or grades
     if ($result >= 90) {
         $letterGrade = "A";
     } elseif ($result >= 80) {
@@ -74,7 +74,7 @@ if ($_POST) {
     } else {
         $letterGrade = "F";
     }
-
+    // ito magiging output dito ppakita grade letter mo
     echo "<div class='result'>Final Grade: " . number_format($result, 1) . "<br>Letter Grade: $letterGrade</div>";
 }
 ?>
